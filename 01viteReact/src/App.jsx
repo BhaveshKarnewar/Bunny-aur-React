@@ -1,5 +1,11 @@
+import Chai from "./chai.jsx";
+
 function App() {
-  return <h1>hello world with vite | bhavesh</h1>;
+  return (
+    <>
+      <Chai />
+    </>
+  );
 }
 
 export default App;
