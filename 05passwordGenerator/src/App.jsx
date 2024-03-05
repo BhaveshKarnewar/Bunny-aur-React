@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <h1 className="text-white text-center text-2xl mt-[20px]">
-        Currency Converter
+        Password generator
       </h1>
       <div className="min-w-[300px] h-40 w-100 mt-10 mx-5 bg-gray-700 text-orange-500 rounded-3xl flex flex-col justify-center items-center gap-[30px]">
         <div className="rounded-full w-[75%] overflow-hidden">
