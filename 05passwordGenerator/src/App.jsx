@@ -25,16 +25,25 @@ function App() {
   // use ref
   let passwordRef = useRef(null);
 
-  const copyPasswordToClipboard = useCallback(() => {
+  // const copyPasswordToClipboard = useCallback(() => {
+  //   passwordRef.current?.select();
+  //   passwordRef.current?.setSelectionRange(0, 15);
+
+  //   window.navigator.clipboard.writeText(password);
+  // }, [password]);
+
+  //  majha shahanpana following:
+
+  function copyPasswordToClipboard() {
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0, 15);
+    passwordRef.current?.setSelectionRange(0, 10);
 
     window.navigator.clipboard.writeText(password);
-  }, [password]);
+  }
 
   useEffect(() => {
     passGenerator();
-  }, [length, numberAllowed, charAllowed, passGenerator]);
+  }, [length, numberAllowed, charAllowed]);
 
   return (
     <>

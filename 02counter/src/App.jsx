@@ -1,6 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 
 function App() {
@@ -8,17 +7,19 @@ function App() {
   // let counter = 5;
 
   function addVal() {
-    if (counter < 20) {
-      counter += 1;
-      setCounter(counter);
+    if (counter < 50) {
+      setCounter(counter + 1);
+      // setCounter(counter + 1);
+      // setCounter(counter + 1);
+      // setCounter(counter + 1);
+      // still the output will be same, because the are processed in batches & to do the actual change you need to use callback for prevCounter
       console.log("clicked", counter);
     }
   }
 
   function remVal() {
     if (counter > 0) {
-      counter -= 1;
-      setCounter(counter);
+      setCounter(counter - 1);
       console.log("clicked", counter);
     }
   }
