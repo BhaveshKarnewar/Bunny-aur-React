@@ -8,6 +8,10 @@ function AddTodo() {
 
   const addTodoHandler = (e) => {
     e.preventDefault();
+    if (input == "") {
+      alert("Enter a valid Task");
+      return;
+    } // added a condition where empty input is rejected
     dispatch(addTodo(input));
     setInput("");
   };
