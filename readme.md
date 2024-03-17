@@ -1,3 +1,2 @@
-#statring react js on 3 march 2024
+#hehe Shampoo
 
-<p>by bunny</p>
