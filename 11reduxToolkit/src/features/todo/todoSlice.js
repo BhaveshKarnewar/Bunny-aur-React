@@ -4,7 +4,12 @@ const initialState = {
   todos: [
     {
       id: 1,
-      text: "hello world",
+      text: "sample task",
+      completed: false,
+    },
+    {
+      id: 2,
+      text: "sample task 2",
       completed: false,
     },
   ],

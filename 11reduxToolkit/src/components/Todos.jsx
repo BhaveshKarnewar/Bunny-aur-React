@@ -14,9 +14,7 @@ export default function Todos() {
             key={todo.id}
             className="w-[400px] h-[50px] bg-cyan-300 flex justify-center items-center my-[10px]"
           >
-            <span className="text-[30px] text-amber-900">
-              {todo.text.toUpperCase()}
-            </span>
+            <span className="text-[30px] text-amber-900">{todo.text}</span>
             <button
               className="px-[20px]"
               onClick={() => {
