@@ -1,3 +1,5 @@
+// forward ref hard syntax
+
 import React, { useId } from "react";
 
 const Input = React.forwardRef(function Input(
