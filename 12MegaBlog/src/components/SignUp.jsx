@@ -63,7 +63,14 @@ function SignUp() {
               label="Email:"
               placeholder="Enter your Email"
               type="email"
-              {...register("email", { required: true, matchpatern })}
+              {...register("email", {
+                required: true,
+                validate: {
+                  matchPatern: (value) =>
+                    /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
+                    "Email address must be a valid address",
+                },
+              })}
             />
             <Input
               label="Password: "
@@ -71,11 +78,6 @@ function SignUp() {
               placeholder="Enter your password"
               {...register("password", {
                 required: true,
-                validate: {
-                  matchPatern: (value) =>
-                    /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
-                    "Email address must be a valid address",
-                },
               })}
             />
             <Button type="submit" className="w-full">
