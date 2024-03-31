@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Logo, LogoutBtn } from "../index";
 import { useSelector } from "react-redux";
-import { logout } from "../../store/authSlice";
+// import { logout } from "../../store/authSlice";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Header() {
@@ -63,12 +63,7 @@ export default function Header() {
 
             {authStatus && (
               <li>
-                <button
-                  onClick={() => navigate(item.slug)}
-                  className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"
-                >
-                  Logout
-                </button>
+                <LogoutBtn />
               </li>
             )}
           </ul>
