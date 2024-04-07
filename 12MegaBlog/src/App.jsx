@@ -28,7 +28,8 @@ function App() {
       <div className="w-full block">
         <Header />
         <main>
-          TODO: <Outlet />
+          <p className="mt-8 ">Read Blogs</p>
+          <Outlet />
         </main>
         <Footer />
       </div>

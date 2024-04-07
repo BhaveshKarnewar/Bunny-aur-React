@@ -38,16 +38,16 @@ export default function Header() {
   ];
 
   return (
-    <header className="py-3 shadow bg-gray-500">
+    <header className="py-3 shadow bg-gray-500 text-2xl">
       <Container>
-        <nav className="flex">
+        <nav className="flex justify-between items-center">
           <div className="mr-4">
             <Link to="/">
               <Logo width="70px" />
             </Link>
           </div>
 
-          <ul className="flex mi-auto">
+          <ul className="flex my-auto">
             {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>
